@@ -71,7 +71,7 @@ function assertOwnDataPackagesValid(addon) {
 }
 
 module.exports = {
-  name: 'ember-m3',
+  name: require('./package.json').name,
 
   init() {
     let ret = this._super.init.call(this, ...arguments);
